@@ -1,447 +1,793 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Daftar Peserta Metodologi · Muharram 1447 H</title>
-  <style>
-    /* reset & base */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pembinaan Metodologi Dasar Qiroati · 1448 H</title>
+    <style>
+        /* reset & base */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-    body {
-      background: #e9ecf0;
-      font-family: 'Segoe UI', Roboto, system-ui, -apple-system, sans-serif;
-      padding: 2rem 1.5rem;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
+        body {
+            background: #e9ecf0;
+            font-family: 'Segoe UI', Roboto, system-ui, -apple-system, sans-serif;
+            padding: 2rem 1.5rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
 
-    .container {
-      max-width: 1300px;
-      width: 100%;
-      background: white;
-      border-radius: 28px;
-      box-shadow: 0 20px 40px -12px rgba(0, 0, 0, 0.2);
-      padding: 2rem 1.8rem 2.8rem;
-      transition: all 0.2s;
-    }
+        .container {
+            max-width: 1300px;
+            width: 100%;
+            background: white;
+            border-radius: 28px;
+            box-shadow: 0 20px 40px -12px rgba(0, 0, 0, 0.2);
+            padding: 2rem 1.8rem 2.8rem;
+            transition: all 0.2s;
+        }
 
-    /* header utama – identik dengan nuansa islami, icon diganti QIRAATI.png */
-    .main-header {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin-bottom: 2.2rem;
-      border-bottom: 3px solid #d4af6e;
-      padding-bottom: 1.2rem;
-    }
+        /* header utama – icon QIRAATI.png */
+        .main-header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 2rem;
+            border-bottom: 3px solid #d4af6e;
+            padding-bottom: 1.2rem;
+        }
 
-    .main-header .title-row {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 12px;
-      flex-wrap: wrap;
-    }
+        .main-header .title-row {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
 
-    .main-header .title-row img {
-      height: 48px;
-      width: auto;
-      object-fit: contain;
-      filter: drop-shadow(0 2px 4px rgba(0,0,0,0.05));
-      transition: transform 0.15s;
-    }
+        .main-header .title-row img {
+            height: 48px;
+            width: auto;
+            object-fit: contain;
+            filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.05));
+            transition: transform 0.15s;
+        }
 
-    .main-header .title-row img:hover {
-      transform: scale(1.02);
-    }
+        .main-header .title-row img:hover {
+            transform: scale(1.02);
+        }
 
-    .main-header h1 {
-      font-size: 2.5rem;
-      font-weight: 600;
-      letter-spacing: 2px;
-      color: #1e2a3a;
-      background: linear-gradient(135deg, #1e3a4b 0%, #2b5a6b 80%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-      margin-bottom: 0.2rem;
-      text-shadow: 0 2px 4px rgba(0,0,0,0.03);
-      line-height: 1.2;
-    }
+        .main-header h1 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            letter-spacing: 2px;
+            color: #1e2a3a;
+            background: linear-gradient(135deg, #1e3a4b 0%, #2b5a6b 80%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 0.2rem;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.03);
+            line-height: 1.2;
+        }
 
-    .main-header .subhead {
-      font-size: 1.1rem;
-      font-weight: 400;
-      color: #4a5b6b;
-      background: #f2f5f9;
-      padding: 0.2rem 1.8rem;
-      border-radius: 40px;
-      letter-spacing: 1px;
-      box-shadow: inset 0 0 0 1px #dce2ea;
-      margin-top: 4px;
-    }
+        .main-header .subhead {
+            font-size: 1.1rem;
+            font-weight: 400;
+            color: #4a5b6b;
+            background: #f2f5f9;
+            padding: 0.2rem 1.8rem;
+            border-radius: 40px;
+            letter-spacing: 1px;
+            box-shadow: inset 0 0 0 1px #dce2ea;
+            margin-top: 4px;
+        }
 
-    .periode-badge {
-      display: inline-block;
-      background: #d4af6e22;
-      border: 1px solid #d4af6e88;
-      padding: 0.15rem 1.6rem;
-      border-radius: 30px;
-      font-size: 0.95rem;
-      font-weight: 500;
-      color: #3d4f5e;
-      margin-top: 6px;
-    }
+        .periode-badge {
+            display: inline-block;
+            background: #d4af6e22;
+            border: 1px solid #d4af6e88;
+            padding: 0.15rem 1.6rem;
+            border-radius: 30px;
+            font-size: 0.95rem;
+            font-weight: 500;
+            color: #3d4f5e;
+            margin-top: 6px;
+        }
 
-    /* setiap gelombang berupa kartu terpisah */
-    .gelombang-card {
-      background: #ffffff;
-      border-radius: 24px;
-      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.04);
-      padding: 1.2rem 0.2rem 1.8rem 0.2rem;
-      margin-bottom: 3rem;
-      transition: 0.15s;
-    }
+        /* ===== TABULASI ===== */
+        .tabs {
+            margin-top: 1.8rem;
+            display: flex;
+            flex-direction: column;
+        }
 
-    .gelombang-card:last-child {
-      margin-bottom: 0;
-    }
+        .tab-headers {
+            display: flex;
+            gap: 4px;
+            border-bottom: 3px solid #d4af6e;
+            padding-bottom: 0;
+            flex-wrap: wrap;
+        }
 
-    .gelombang-header {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: baseline;
-      justify-content: space-between;
-      padding: 0 1.2rem 0.8rem 1.2rem;
-      border-bottom: 2px dashed #dce3ec;
-    }
+        .tab-btn {
+            padding: 0.8rem 1.8rem;
+            background: #eef3f9;
+            border: none;
+            border-radius: 12px 12px 0 0;
+            font-size: 1rem;
+            font-weight: 600;
+            color: #3d5568;
+            cursor: pointer;
+            transition: all 0.2s;
+            border: 1px solid transparent;
+            border-bottom: none;
+            letter-spacing: 0.3px;
+        }
 
-    .gelombang-header h2 {
-      font-size: 1.8rem;
-      font-weight: 600;
-      color: #1e2a3a;
-      letter-spacing: 0.5px;
-    }
+        .tab-btn:hover {
+            background: #e2eaf5;
+            color: #1a2f40;
+        }
 
-    .gelombang-header .hari {
-      background: #eef3f9;
-      padding: 0.4rem 1.4rem;
-      border-radius: 40px;
-      font-size: 0.95rem;
-      font-weight: 500;
-      color: #1f3a4b;
-      box-shadow: inset 0 0 0 1px #cdd8e4;
-    }
+        .tab-btn.active {
+            background: white;
+            color: #1e3342;
+            border-color: #d4af6e;
+            border-bottom: 3px solid white;
+            margin-bottom: -3px;
+            position: relative;
+            box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.04);
+        }
 
-    /* tabel – gaya bersih dan hierarki */
-    .table-responsive {
-      overflow-x: auto;
-      padding: 0.2rem 0.6rem 0.2rem 0.6rem;
-    }
+        .tab-content {
+            display: none;
+            background: white;
+            border-radius: 0 0 20px 20px;
+            padding: 1.5rem 0.2rem 1.8rem 0.2rem;
+            border: 1px solid #e6edf6;
+            border-top: none;
+        }
 
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      font-size: 0.9rem;
-      min-width: 700px;
-    }
+        .tab-content.active {
+            display: block;
+        }
 
-    thead {
-      background: #1e3342;
-      color: white;
-    }
+        /* ===== TABEL DENGAN STICKY HEADER & SCROLL ===== */
+        .table-wrapper {
+            position: relative;
+            overflow: auto;
+            max-height: 520px;
+            border-radius: 12px;
+            border: 1px solid #e2e8f0;
+            margin: 0 0.4rem;
+        }
 
-    thead th {
-      padding: 0.9rem 0.8rem;
-      font-weight: 500;
-      letter-spacing: 0.4px;
-      text-align: left;
-      white-space: nowrap;
-      font-size: 0.9rem;
-      border-right: 1px solid #2d4a5c;
-    }
+        .table-wrapper table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.9rem;
+            min-width: 700px;
+        }
 
-    thead th:last-child {
-      border-right: none;
-    }
+        .table-wrapper thead {
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
 
-    thead th:first-child {
-      border-radius: 12px 0 0 0;
-    }
+        .table-wrapper thead th {
+            background: #1e3342;
+            color: white;
+            padding: 0.9rem 0.8rem;
+            font-weight: 500;
+            letter-spacing: 0.4px;
+            text-align: left;
+            white-space: nowrap;
+            font-size: 0.9rem;
+            border-right: 1px solid #2d4a5c;
+        }
 
-    thead th:last-child {
-      border-radius: 0 12px 0 0;
-    }
+        .table-wrapper thead th:last-child {
+            border-right: none;
+        }
 
-    tbody tr {
-      border-bottom: 1px solid #e6ecf3;
-      transition: background 0.1s ease;
-    }
+        .table-wrapper tbody tr {
+            border-bottom: 1px solid #e6ecf3;
+            transition: background 0.1s ease;
+        }
 
-    tbody tr:hover {
-      background: #f5f9ff;
-    }
+        .table-wrapper tbody tr:hover {
+            background: #f5f9ff;
+        }
 
-    tbody td {
-      padding: 0.8rem 0.8rem;
-      vertical-align: middle;
-      color: #1f2e3e;
-      border-right: 1px solid #eef2f8;
-    }
+        .table-wrapper tbody td {
+            padding: 0.75rem 0.8rem;
+            vertical-align: middle;
+            border-right: 1px solid #eef2f8;
+            color: #1f2e3e;
+        }
 
-    tbody td:last-child {
-      border-right: none;
-    }
+        .table-wrapper tbody td:last-child {
+            border-right: none;
+        }
 
-    /* kolom nomor urut lebih ramping */
-    .col-no {
-      width: 55px;
-      text-align: center;
-      font-weight: 500;
-      color: #3b5568;
-    }
+        .table-wrapper tbody tr:nth-child(even) {
+            background-color: #fafcfe;
+        }
 
-    .col-reg {
-      font-weight: 500;
-      color: #134b6b;
-      font-size: 0.8rem;
-      letter-spacing: 0.2px;
-    }
+        .table-wrapper tbody tr:nth-child(even):hover {
+            background-color: #f1f6fd;
+        }
 
-    .col-nama {
-      font-weight: 500;
-      min-width: 160px;
-    }
+        /* kolom peserta */
+        .col-no {
+            width: 55px;
+            text-align: center;
+            font-weight: 600;
+            color: #1f3a4f;
+        }
+        .col-reg {
+            font-weight: 500;
+            color: #0f4a6b;
+            font-size: 0.8rem;
+            letter-spacing: 0.2px;
+        }
+        .col-nama {
+            font-weight: 600;
+            color: #0f2a3f;
+            min-width: 160px;
+        }
+        .col-kecamatan {
+            color: #1a3f57;
+            font-weight: 500;
+        }
+        .col-kota {
+            color: #1a3f57;
+            font-weight: 500;
+        }
 
-    .col-kecamatan {
-      color: #2b4a5e;
-    }
+        /* ===== TABEL RUNDOWN ===== */
+        .rundown-table th:first-child {
+            width: 17%;
+            min-width: 100px;
+        }
+        .rundown-table th:nth-child(2) {
+            width: 16%;
+            min-width: 90px;
+        }
+        .rundown-table th:nth-child(3) {
+            width: 38%;
+            min-width: 200px;
+        }
+        .rundown-table th:nth-child(4) {
+            width: 29%;
+            min-width: 150px;
+        }
 
-    .col-kota {
-      font-weight: 500;
-      color: #1b3a4e;
-    }
+        .rundown-table td {
+            vertical-align: top;
+            padding: 0.7rem 0.8rem;
+        }
 
-    /* warna selang-seling */
-    tbody tr:nth-child(even) {
-      background-color: #fafcfe;
-    }
+        .rundown-table td[colspan="2"] {
+            background: #f8faff;
+            font-weight: 500;
+            color: #2b4a5e;
+        }
 
-    tbody tr:nth-child(even):hover {
-      background-color: #f1f6fd;
-    }
+        /* wrapper rundown dengan scroll */
+        .rundown-wrapper {
+            max-height: 580px;
+            overflow: auto;
+            border-radius: 12px;
+            border: 1px solid #e2e8f0;
+            margin: 0 0.4rem;
+        }
 
-    /* identitas kaki */
-    .footer-note {
-      margin-top: 2rem;
-      display: flex;
-      justify-content: flex-end;
-      font-size: 0.8rem;
-      color: #5c6f82;
-      border-top: 1px solid #dae1ea;
-      padding-top: 1.2rem;
-      letter-spacing: 0.3px;
-    }
+        .rundown-wrapper table {
+            min-width: 680px;
+        }
 
-    .badge-inv {
-      background: #d4af6e22;
-      border-radius: 30px;
-      padding: 0.1rem 0.7rem;
-      font-size: 0.7rem;
-      font-weight: 500;
-      color: #7d6b3d;
-      border: 1px solid #d4af6e55;
-      margin-left: 6px;
-      white-space: nowrap;
-    }
+        .rundown-wrapper thead {
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
 
-    /* responsif */
-    @media (max-width: 680px) {
-      body { padding: 1rem 0.6rem; }
-      .container { padding: 1.2rem 0.6rem; }
-      .main-header h1 { font-size: 1.8rem; }
-      .main-header .title-row img { height: 36px; }
-      .gelombang-header { flex-direction: column; align-items: flex-start; gap: 6px; }
-      .gelombang-header h2 { font-size: 1.4rem; }
-      thead th, tbody td { padding: 0.6rem 0.4rem; font-size: 0.8rem; }
-      .col-no { width: 40px; }
-    }
+        .rundown-wrapper thead th {
+            background: #1e3342;
+            color: white;
+            padding: 0.9rem 0.8rem;
+            font-weight: 500;
+            letter-spacing: 0.4px;
+            text-align: left;
+            white-space: nowrap;
+            font-size: 0.9rem;
+            border-right: 1px solid #2d4a5c;
+        }
 
-    /* konsistensi ukuran & warna */
-    .text-muted-small {
-      color: #4e6c82;
-      font-weight: 400;
-    }
+        .rundown-wrapper thead th:last-child {
+            border-right: none;
+        }
 
-    .bg-soft-gold {
-      background: #fbf6ed;
-    }
+        .rundown-wrapper tbody tr {
+            border-bottom: 1px solid #e6ecf3;
+        }
 
-    /* table header radius kanan kiri */
-    thead tr th:first-child {
-      border-top-left-radius: 10px;
-    }
-    thead tr th:last-child {
-      border-top-right-radius: 10px;
-    }
-  </style>
+        .rundown-wrapper tbody tr:hover {
+            background: #f5f9ff;
+        }
+
+        .rundown-wrapper tbody td {
+            padding: 0.7rem 0.8rem;
+            vertical-align: top;
+            border-right: 1px solid #eef2f8;
+            color: #1f2e3e;
+        }
+
+        .rundown-wrapper tbody td:last-child {
+            border-right: none;
+        }
+
+        .rundown-wrapper tbody tr:nth-child(even) {
+            background-color: #fafcfe;
+        }
+
+        .rundown-wrapper tbody tr:nth-child(even):hover {
+            background-color: #f1f6fd;
+        }
+
+        .keterangan-jadwal {
+            margin-top: 1.2rem;
+            padding: 0.8rem 1.2rem;
+            background: #f4f7fc;
+            border-radius: 14px;
+            font-size: 0.9rem;
+            color: #2d4a62;
+            border-left: 4px solid #d4af6e;
+            font-style: italic;
+        }
+
+        .footer-note {
+            margin-top: 2rem;
+            display: flex;
+            justify-content: flex-end;
+            font-size: 0.8rem;
+            color: #5c6f82;
+            border-top: 1px solid #dae1ea;
+            padding-top: 1.2rem;
+            letter-spacing: 0.3px;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .badge-inv {
+            background: #d4af6e22;
+            border-radius: 30px;
+            padding: 0.1rem 0.7rem;
+            font-size: 0.7rem;
+            font-weight: 500;
+            color: #7d6b3d;
+            border: 1px solid #d4af6e55;
+            margin-left: 6px;
+            white-space: nowrap;
+        }
+
+        @media (max-width: 680px) {
+            body {
+                padding: 1rem 0.6rem;
+            }
+            .container {
+                padding: 1.2rem 0.6rem;
+            }
+            .main-header h1 {
+                font-size: 1.8rem;
+            }
+            .main-header .title-row img {
+                height: 36px;
+            }
+            .tab-btn {
+                padding: 0.6rem 1.2rem;
+                font-size: 0.85rem;
+            }
+            .table-wrapper {
+                max-height: 400px;
+            }
+            .rundown-wrapper {
+                max-height: 440px;
+            }
+            .table-wrapper thead th,
+            .table-wrapper tbody td,
+            .rundown-wrapper thead th,
+            .rundown-wrapper tbody td {
+                padding: 0.5rem 0.4rem;
+                font-size: 0.78rem;
+            }
+            .col-no {
+                width: 36px;
+            }
+        }
+    </style>
 </head>
 <body>
-<div class="container">
+    <div class="container">
 
-  <!-- header utama – icon QIRAATI.png menggantikan 📘 -->
-  <div class="main-header">
-    <div class="title-row">
-      <!-- Ganti icon buku dengan QIRAATI.png -->
-      <img src="QIRAATI.png" alt="QIRAATI logo" title="QIRAATI">
-      <h1>DAFTAR PESERTA METODOLOGI</h1>
-    </div>
-    <span class="subhead">PERIODE MUHARROM 1447 H</span>
-    <span class="periode-badge">〓 2 gelombang · 82 peserta 〓</span>
-  </div>
+        <!-- HEADER dengan QIRAATI.png dan tahun 1448 -->
+        <div class="main-header">
+            <div class="title-row">
+                <img src="QIRAATI.png" alt="QIRAATI logo" title="QIRAATI">
+                <h1>DAFTAR PESERTA METODOLOGI</h1>
+            </div>
+            <span class="subhead">PERIODE MUHARROM 1448 H</span>
+            <span class="periode-badge">〓 2 gelombang · 82 peserta 〓</span>
+        </div>
 
-  <!-- ================= GELOMBANG 1 ================= -->
-  <div class="gelombang-card">
-    <div class="gelombang-header">
-      <h2>🌙 Gelombang 1</h2>
-      <span class="hari">Selasa, Rabu, Kamis · 23, 24, 25 Juni 2026 M</span>
-    </div>
-    <div class="table-responsive">
-      <table>
-        <thead>
-          <tr>
-            <th class="col-no">No</th>
-            <th class="col-reg">No Registrasi</th>
-            <th class="col-nama">Nama Lengkap</th>
-            <th class="col-kecamatan">Kecamatan</th>
-            <th class="col-kota">Kota</th>
-          </tr>
-        </thead>
-        <tbody>
-          <!-- data gelombang 1 (42 peserta) -->
-          <tr><td>1</td><td>REG-260615-36SE</td><td>Ahmad Luqman Al Khakim</td><td>Wonosalam</td><td>Demak</td></tr>
-          <tr><td>2</td><td>REG-260614-8H5W</td><td>Durrotus Sakdiyah</td><td>Kota Soe</td><td>Timor Tengah Selatan</td></tr>
-          <tr><td>3</td><td>REG-260614-4J5C</td><td>Endah Sofiati</td><td>Demak</td><td>Demak</td></tr>
-          <tr><td>4</td><td>REG-260614-R1Y5</td><td>Fatika Rahma Fadila</td><td>Demak</td><td>Demak</td></tr>
-          <tr><td>5</td><td>REG-260617-W7CX</td><td>Fitri Suryani</td><td>Wedung</td><td>Demak</td></tr>
-          <tr><td>6</td><td>REG-260616-VJ2Y</td><td>Inayatussholehah</td><td>Demak</td><td>Demak</td></tr>
-          <tr><td>7</td><td>REG-260614-JLPI</td><td>Ismah</td><td>Wedung</td><td>Demak</td></tr>
-          <tr><td>8</td><td>REG-260617-O0WQ</td><td>Khilmi Yatun Nasikhah</td><td>Bonang</td><td>Demak</td></tr>
-          <tr><td>9</td><td>REG-260615-KWQN</td><td>Luklu'ul Chadiroh</td><td>Gajah</td><td>Demak</td></tr>
-          <tr><td>10</td><td>REG-260614-JZON</td><td>Mazroatul Khoiroh</td><td>Wedung</td><td>Demak</td></tr>
-          <tr><td>11</td><td>REG-260617-QREZ</td><td>Mochammad Asnawi</td><td>Wedung</td><td>Demak</td></tr>
-          <tr><td>12</td><td>REG-260614-SL5Y</td><td>Nailin Nikmah</td><td>Gajah</td><td>Demak</td></tr>
-          <tr><td>13</td><td>INV-MTD26-XBEN</td><td>Nur Wakhidah</td><td>Demak</td><td>Demak</td></tr>
-          <tr><td>14</td><td>REG-260614-D9NN</td><td>Nuryati</td><td>Demak</td><td>Demak</td></tr>
-          <tr><td>15</td><td>REG-260614-PGVJ</td><td>Rahma Syavina Putri</td><td>Bonang</td><td>Demak</td></tr>
-          <tr><td>16</td><td>REG-260614-JRWP</td><td>Rohayati</td><td>Karangtengah</td><td>Demak</td></tr>
-          <tr><td>17</td><td>REG-260615-XN9O</td><td>Siti Mutiatus Sholekhah</td><td>Bonang</td><td>Demak</td></tr>
-          <tr><td>18</td><td>MTD26-002</td><td>Sri Madurani</td><td>Bonang</td><td>Demak</td></tr>
-          <tr><td>19</td><td>REG-260614-W6AH</td><td>Sri Purwati</td><td>Demak</td><td>Demak</td></tr>
-          <tr><td>20</td><td>REG-260615-F4PY</td><td>Sulistriyani</td><td>Wonosalam</td><td>Demak</td></tr>
-          <tr><td>21</td><td>REG-260614-AT8R</td><td>Ulfatut Tho'ah</td><td>Wedung</td><td>Demak</td></tr>
-          <tr><td>22</td><td>REG-260615-QCGW</td><td>Ulya Zakiyah</td><td>Gubug</td><td>Grobogan</td></tr>
-          <tr><td>23</td><td>REG-260614-2QSU</td><td>Ahmad Baihaqi</td><td>Wonosalam</td><td>Demak</td></tr>
-          <tr><td>24</td><td>REG-260614-NO2U</td><td>Evi Lailatul Mifrokhah</td><td>Guntur</td><td>Demak</td></tr>
-          <tr><td>25</td><td>REG-260614-NVUV</td><td>Farihatul Udma</td><td>Purworejo</td><td>Blora</td></tr>
-          <tr><td>26</td><td>REG-260614-IHG1</td><td>Fatimatuz Zahro</td><td>Toroh</td><td>Grobogan</td></tr>
-          <tr><td>27</td><td>REG-260614-137Y</td><td>Halimatus Sa'diyah</td><td>Karangawen</td><td>Demak</td></tr>
-          <tr><td>28</td><td>REG-260614-1DGC</td><td>Laili Nurul Khamidah</td><td>Toroh</td><td>Grobogan</td></tr>
-          <tr><td>29</td><td>REG-260614-7NXQ</td><td>M. Imdad In'amul Alif</td><td>Toroh</td><td>Grobogan</td></tr>
-          <tr><td>30</td><td>REG-260614-IHZA</td><td>Maftuhatul Afidah</td><td>Penawangan</td><td>Grobogan</td></tr>
-          <tr><td>31</td><td>REG-260614-NE4R</td><td>Muhammad Dairobi Al-Ihsan</td><td>Gubug</td><td>Grobogan</td></tr>
-          <tr><td>32</td><td>REG-260614-7J6H</td><td>Najwa Naily Rahma</td><td>Tegowanu</td><td>Grobogan</td></tr>
-          <tr><td>33</td><td>REG-260614-KK60</td><td>Nia Dwi Lestari</td><td>Wonosalam</td><td>Demak</td></tr>
-          <tr><td>34</td><td>REG-260614-39SJ</td><td>Nofita Indah Wulandari</td><td>Godong</td><td>Grobogan</td></tr>
-          <tr><td>35</td><td>REG-260614-R040</td><td>Nur Syafa Aliyatul Khoiriyah</td><td>Kedungjati</td><td>Grobogan</td></tr>
-          <tr><td>36</td><td>REG-260614-W3IP</td><td>Nurul Maghfiroh</td><td>Wonosalam</td><td>Demak</td></tr>
-          <tr><td>37</td><td>REG-260614-CVLA</td><td>Siti Iliyana Dewi</td><td>Godong</td><td>Grobogan</td></tr>
-          <tr><td>38</td><td>REG-260614-DX6W</td><td>Siti Laila Fazidah</td><td>Gajah</td><td>Demak</td></tr>
-          <tr><td>39</td><td>REG-260614-1SCQ</td><td>Siti Shofia Salma</td><td>Brati</td><td>Grobogan</td></tr>
-          <tr><td>40</td><td>REG-260614-3Q10</td><td>Tri Qesa Della Al Setyabit</td><td>Kedungjati</td><td>Grobogan</td></tr>
-          <tr><td>41</td><td>REG-260614-UL7H</td><td>Umi Farikhah</td><td>Karangawen</td><td>Demak</td></tr>
-          <tr><td>42</td><td>REG-260614-EP0K</td><td>Zuyyina Indana Zulfa</td><td>Palas</td><td>Lampung Selatan</td></tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
+        <!-- ========== TABULASI 3 BAGIAN ========== -->
+        <div class="tabs">
 
-  <!-- ================= GELOMBANG 2 ================= -->
-  <div class="gelombang-card">
-    <div class="gelombang-header">
-      <h2>🌙 Gelombang 2</h2>
-      <span class="hari">Selasa, Rabu, Kamis · 30 Juni, 1, 2 Juli 2026 M</span>
-    </div>
-    <div class="table-responsive">
-      <table>
-        <thead>
-          <tr>
-            <th class="col-no">No</th>
-            <th class="col-reg">No Registrasi</th>
-            <th class="col-nama">Nama Lengkap</th>
-            <th class="col-kecamatan">Kecamatan</th>
-            <th class="col-kota">Kota</th>
-          </tr>
-        </thead>
-        <tbody>
-          <!-- data gelombang 2 (40 peserta) -->
-          <tr><td>1</td><td>REG-260616-S5D4</td><td>Fina Himatus Sholikhah</td><td>Bonang</td><td>Demak</td></tr>
-          <tr><td>2</td><td>REG-260615-CZG6</td><td>Hanik Atul Fitri</td><td>Bonang</td><td>Demak</td></tr>
-          <tr><td>3</td><td>REG-260615-SC5N</td><td>Laili Fahrun Nisa'</td><td>Bonang</td><td>Demak</td></tr>
-          <tr><td>4</td><td>REG-260615-FDQ2</td><td>Maratus Sholikah</td><td>Wonosalam</td><td>Demak</td></tr>
-          <tr><td>5</td><td>REG-260615-MXPM</td><td>Nurul Hukama'</td><td>Demak</td><td>Demak</td></tr>
-          <tr><td>6</td><td>REG-260615-HF04</td><td>Robiatul Walidah</td><td>Demak</td><td>Demak</td></tr>
-          <tr><td>7</td><td>REG-260618-UAWG</td><td>Khilyatus Sa'ada</td><td>Karangawen</td><td>Demak</td></tr>
-          <tr><td>8</td><td>REG-260618-RN6W</td><td>Azfi Nafisatun Najwa</td><td>Wonotunggal</td><td>Batang</td></tr>
-          <tr><td>9</td><td>REG-260618-OJ78</td><td>Safna Fitrotul Ahla</td><td>Wonotunggal</td><td>Batang</td></tr>
-          <tr><td>10</td><td>REG-260618-PH3H</td><td>Shidqi Qthrotun Nada</td><td>Ngaliyan</td><td>Semarang</td></tr>
-          <tr><td>11</td><td>REG-260616-MDZU</td><td>Carrissa Prri Supriyanto</td><td>Karangawen</td><td>Demak</td></tr>
-          <tr><td>12</td><td>REG-260616-TR7H</td><td>Deswia Sheyla Fatikhah</td><td>Godong</td><td>Grobogan</td></tr>
-          <tr><td>13</td><td>REG-260616-KJ39</td><td>Elvia Setya Putri</td><td>Toroh</td><td>Grobogan</td></tr>
-          <tr><td>14</td><td>REG-260616-628S</td><td>Elvina Naimatul Khoiriyah</td><td>Toroh</td><td>Grobogan</td></tr>
-          <tr><td>15</td><td>REG-260616-ERQU</td><td>Hamida Zakiyatus Shofiya</td><td>Demak</td><td>Demak</td></tr>
-          <tr><td>16</td><td>REG-260616-E4MJ</td><td>Livia Nuraini</td><td>Toroh</td><td>Grobogan</td></tr>
-          <tr><td>17</td><td>REG-260616-ZLYH</td><td>Maelany Prytha Amanda</td><td>Tegowanu</td><td>Grobogan</td></tr>
-          <tr><td>18</td><td>REG-260616-GJXQ</td><td>Meidina Salwa Nazikhah</td><td>Penawangan</td><td>Grobogan</td></tr>
-          <tr><td>19</td><td>REG-260616-1F5E</td><td>Nadzifah Millatina</td><td>Demak</td><td>Demak</td></tr>
-          <tr><td>20</td><td>REG-260616-ONNN</td><td>Safhira Aulia Hadini</td><td>Gubug</td><td>Grobogan</td></tr>
-          <tr><td>21</td><td>REG-260616-S821</td><td>Alisa Bunga Amelia</td><td>Toroh</td><td>Grobogan</td></tr>
-          <tr><td>22</td><td>REG-260616-9ISW</td><td>Dina Wulan Fitriana</td><td>Teluk Gelam</td><td>Ogan Komering Ilir</td></tr>
-          <tr><td>23</td><td>REG-260616-Y1IR</td><td>Faridatul Lubbal Azkiya</td><td>Kebonagung</td><td>Demak</td></tr>
-          <tr><td>24</td><td>REG-260616-Q7ST</td><td>Firri Salsabila Maghfiroh</td><td>Toroh</td><td>Grobogan</td></tr>
-          <tr><td>25</td><td>REG-260616-M3TM</td><td>Fitri Yuni Yanti</td><td>Godong</td><td>Grobogan</td></tr>
-          <tr><td>26</td><td>REG-260616-YRC5</td><td>Fitria Anggun Sari</td><td>Penawangan</td><td>Grobogan</td></tr>
-          <tr><td>27</td><td>REG-260616-QO8R</td><td>Ikhtiarika Karunia Luna Meida</td><td>Karangawen</td><td>Demak</td></tr>
-          <tr><td>28</td><td>REG-260616-ECBT</td><td>Intan Robiatul Adawiyah</td><td>Godong</td><td>Grobogan</td></tr>
-          <tr><td>29</td><td>REG-260616-CG3Z</td><td>Khoirotun Nisa</td><td>Toroh</td><td>Grobogan</td></tr>
-          <tr><td>30</td><td>REG-260616-WFTE</td><td>Luna Sintia Vera</td><td>Karangawen</td><td>Demak</td></tr>
-          <tr><td>31</td><td>REG-260616-4GBQ</td><td>Nabila Putri Riani</td><td>Gubug</td><td>Grobogan</td></tr>
-          <tr><td>32</td><td>REG-260616-1W4P</td><td>Naisyifa Maretasya Vislam</td><td>Tlogomulyo</td><td>Semarang</td></tr>
-          <tr><td>33</td><td>REG-260616-7UH1</td><td>Najwa Ayu Aqla Akmalia Phasa</td><td>Dempet</td><td>Demak</td></tr>
-          <tr><td>34</td><td>REG-260616-766K</td><td>Nurma Alivia Humaira</td><td>Merauke</td><td>Papua Selatan</td></tr>
-          <tr><td>35</td><td>REG-260616-JE1C</td><td>Rohmatul Faizah</td><td>Godong</td><td>Grobogan</td></tr>
-          <tr><td>36</td><td>REG-260616-YA9F</td><td>Syifa Azcha Shalsabila</td><td>Toroh</td><td>Grobogan</td></tr>
-          <tr><td>37</td><td>REG-260616-4BTL</td><td>Tachta Alfina Wulandari</td><td>Gubug</td><td>Grobogan</td></tr>
-          <tr><td>38</td><td>REG-260616-XCBM</td><td>Vina Aprilia Putri</td><td>Grobogan</td><td>Grobogan</td></tr>
-          <tr><td>39</td><td>REG-260616-JCDF</td><td>Wilda Rifki Silvia</td><td>Dempet</td><td>Demak</td></tr>
-          <tr><td>40</td><td>REG-260616-STAC</td><td>Yuyun Puji Astuti</td><td>Toroh</td><td>Grobogan</td></tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
+            <!-- TAB HEADERS -->
+            <div class="tab-headers">
+                <button class="tab-btn active" data-tab="tab1">🌙 Gelombang 1</button>
+                <button class="tab-btn" data-tab="tab2">🌙 Gelombang 2</button>
+                <button class="tab-btn" data-tab="tab3">📋 Rundown Acara</button>
+            </div>
 
-  <!-- footer kecil -->
-  <div class="footer-note">
-    <span>📋 Data diunggah dari berkas DAFTAR PESERTA UPLOAD.pdf · periode Muharram 1447 H</span>
-    <span class="badge-inv">2 gelombang</span>
-  </div>
+            <!-- TAB 1 : Gelombang 1 -->
+            <div id="tab1" class="tab-content active">
+                <div style="padding: 0 0.6rem 0.6rem 0.6rem; font-weight:500; color:#1e3342;">
+                    Selasa, Rabu, Kamis · 23, 24, 25 Juni 2026 M
+                </div>
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th class="col-no">No</th>
+                                <th class="col-reg">No Registrasi</th>
+                                <th class="col-nama">Nama Lengkap</th>
+                                <th class="col-kecamatan">Kecamatan</th>
+                                <th class="col-kota">Kota</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>1</td><td>REG-260615-36SE</td><td>Ahmad Luqman Al Khakim</td><td>Wonosalam</td><td>Demak</td></tr>
+                            <tr><td>2</td><td>REG-260614-8H5W</td><td>Durrotus Sakdiyah</td><td>Kota Soe</td><td>Timor Tengah Selatan</td></tr>
+                            <tr><td>3</td><td>REG-260614-4J5C</td><td>Endah Sofiati</td><td>Demak</td><td>Demak</td></tr>
+                            <tr><td>4</td><td>REG-260614-R1Y5</td><td>Fatika Rahma Fadila</td><td>Demak</td><td>Demak</td></tr>
+                            <tr><td>5</td><td>REG-260617-W7CX</td><td>Fitri Suryani</td><td>Wedung</td><td>Demak</td></tr>
+                            <tr><td>6</td><td>REG-260616-VJ2Y</td><td>Inayatussholehah</td><td>Demak</td><td>Demak</td></tr>
+                            <tr><td>7</td><td>REG-260614-JLPI</td><td>Ismah</td><td>Wedung</td><td>Demak</td></tr>
+                            <tr><td>8</td><td>REG-260617-O0WQ</td><td>Khilmi Yatun Nasikhah</td><td>Bonang</td><td>Demak</td></tr>
+                            <tr><td>9</td><td>REG-260615-KWQN</td><td>Luklu'ul Chadiroh</td><td>Gajah</td><td>Demak</td></tr>
+                            <tr><td>10</td><td>REG-260614-JZON</td><td>Mazroatul Khoiroh</td><td>Wedung</td><td>Demak</td></tr>
+                            <tr><td>11</td><td>REG-260617-QREZ</td><td>Mochammad Asnawi</td><td>Wedung</td><td>Demak</td></tr>
+                            <tr><td>12</td><td>REG-260614-SL5Y</td><td>Nailin Nikmah</td><td>Gajah</td><td>Demak</td></tr>
+                            <tr><td>13</td><td>INV-MTD26-XBEN</td><td>Nur Wakhidah</td><td>Demak</td><td>Demak</td></tr>
+                            <tr><td>14</td><td>REG-260614-D9NN</td><td>Nuryati</td><td>Demak</td><td>Demak</td></tr>
+                            <tr><td>15</td><td>REG-260614-PGVJ</td><td>Rahma Syavina Putri</td><td>Bonang</td><td>Demak</td></tr>
+                            <tr><td>16</td><td>REG-260614-JRWP</td><td>Rohayati</td><td>Karangtengah</td><td>Demak</td></tr>
+                            <tr><td>17</td><td>REG-260615-XN9O</td><td>Siti Mutiatus Sholekhah</td><td>Bonang</td><td>Demak</td></tr>
+                            <tr><td>18</td><td>MTD26-002</td><td>Sri Madurani</td><td>Bonang</td><td>Demak</td></tr>
+                            <tr><td>19</td><td>REG-260614-W6AH</td><td>Sri Purwati</td><td>Demak</td><td>Demak</td></tr>
+                            <tr><td>20</td><td>REG-260615-F4PY</td><td>Sulistriyani</td><td>Wonosalam</td><td>Demak</td></tr>
+                            <tr><td>21</td><td>REG-260614-AT8R</td><td>Ulfatut Tho'ah</td><td>Wedung</td><td>Demak</td></tr>
+                            <tr><td>22</td><td>REG-260615-QCGW</td><td>Ulya Zakiyah</td><td>Gubug</td><td>Grobogan</td></tr>
+                            <tr><td>23</td><td>REG-260614-2QSU</td><td>Ahmad Baihaqi</td><td>Wonosalam</td><td>Demak</td></tr>
+                            <tr><td>24</td><td>REG-260614-NO2U</td><td>Evi Lailatul Mifrokhah</td><td>Guntur</td><td>Demak</td></tr>
+                            <tr><td>25</td><td>REG-260614-NVUV</td><td>Farihatul Udma</td><td>Purworejo</td><td>Blora</td></tr>
+                            <tr><td>26</td><td>REG-260614-IHG1</td><td>Fatimatuz Zahro</td><td>Toroh</td><td>Grobogan</td></tr>
+                            <tr><td>27</td><td>REG-260614-137Y</td><td>Halimatus Sa'diyah</td><td>Karangawen</td><td>Demak</td></tr>
+                            <tr><td>28</td><td>REG-260614-1DGC</td><td>Laili Nurul Khamidah</td><td>Toroh</td><td>Grobogan</td></tr>
+                            <tr><td>29</td><td>REG-260614-7NXQ</td><td>M. Imdad In'amul Alif</td><td>Toroh</td><td>Grobogan</td></tr>
+                            <tr><td>30</td><td>REG-260614-IHZA</td><td>Maftuhatul Afidah</td><td>Penawangan</td><td>Grobogan</td></tr>
+                            <tr><td>31</td><td>REG-260614-NE4R</td><td>Muhammad Dairobi Al-Ihsan</td><td>Gubug</td><td>Grobogan</td></tr>
+                            <tr><td>32</td><td>REG-260614-7J6H</td><td>Najwa Naily Rahma</td><td>Tegowanu</td><td>Grobogan</td></tr>
+                            <tr><td>33</td><td>REG-260614-KK60</td><td>Nia Dwi Lestari</td><td>Wonosalam</td><td>Demak</td></tr>
+                            <tr><td>34</td><td>REG-260614-39SJ</td><td>Nofita Indah Wulandari</td><td>Godong</td><td>Grobogan</td></tr>
+                            <tr><td>35</td><td>REG-260614-R040</td><td>Nur Syafa Aliyatul Khoiriyah</td><td>Kedungjati</td><td>Grobogan</td></tr>
+                            <tr><td>36</td><td>REG-260614-W3IP</td><td>Nurul Maghfiroh</td><td>Wonosalam</td><td>Demak</td></tr>
+                            <tr><td>37</td><td>REG-260614-CVLA</td><td>Siti Iliyana Dewi</td><td>Godong</td><td>Grobogan</td></tr>
+                            <tr><td>38</td><td>REG-260614-DX6W</td><td>Siti Laila Fazidah</td><td>Gajah</td><td>Demak</td></tr>
+                            <tr><td>39</td><td>REG-260614-1SCQ</td><td>Siti Shofia Salma</td><td>Brati</td><td>Grobogan</td></tr>
+                            <tr><td>40</td><td>REG-260614-3Q10</td><td>Tri Qesa Della Al Setyabit</td><td>Kedungjati</td><td>Grobogan</td></tr>
+                            <tr><td>41</td><td>REG-260614-UL7H</td><td>Umi Farikhah</td><td>Karangawen</td><td>Demak</td></tr>
+                            <tr><td>42</td><td>REG-260614-EP0K</td><td>Zuyyina Indana Zulfa</td><td>Palas</td><td>Lampung Selatan</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
 
-</div>
+            <!-- TAB 2 : Gelombang 2 -->
+            <div id="tab2" class="tab-content">
+                <div style="padding: 0 0.6rem 0.6rem 0.6rem; font-weight:500; color:#1e3342;">
+                    Selasa, Rabu, Kamis · 30 Juni, 1, 2 Juli 2026 M
+                </div>
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th class="col-no">No</th>
+                                <th class="col-reg">No Registrasi</th>
+                                <th class="col-nama">Nama Lengkap</th>
+                                <th class="col-kecamatan">Kecamatan</th>
+                                <th class="col-kota">Kota</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>1</td><td>REG-260616-S5D4</td><td>Fina Himatus Sholikhah</td><td>Bonang</td><td>Demak</td></tr>
+                            <tr><td>2</td><td>REG-260615-CZG6</td><td>Hanik Atul Fitri</td><td>Bonang</td><td>Demak</td></tr>
+                            <tr><td>3</td><td>REG-260615-SC5N</td><td>Laili Fahrun Nisa'</td><td>Bonang</td><td>Demak</td></tr>
+                            <tr><td>4</td><td>REG-260615-FDQ2</td><td>Maratus Sholikah</td><td>Wonosalam</td><td>Demak</td></tr>
+                            <tr><td>5</td><td>REG-260615-MXPM</td><td>Nurul Hukama'</td><td>Demak</td><td>Demak</td></tr>
+                            <tr><td>6</td><td>REG-260615-HF04</td><td>Robiatul Walidah</td><td>Demak</td><td>Demak</td></tr>
+                            <tr><td>7</td><td>REG-260618-UAWG</td><td>Khilyatus Sa'ada</td><td>Karangawen</td><td>Demak</td></tr>
+                            <tr><td>8</td><td>REG-260618-RN6W</td><td>Azfi Nafisatun Najwa</td><td>Wonotunggal</td><td>Batang</td></tr>
+                            <tr><td>9</td><td>REG-260618-OJ78</td><td>Safna Fitrotul Ahla</td><td>Wonotunggal</td><td>Batang</td></tr>
+                            <tr><td>10</td><td>REG-260618-PH3H</td><td>Shidqi Qthrotun Nada</td><td>Ngaliyan</td><td>Semarang</td></tr>
+                            <tr><td>11</td><td>REG-260616-MDZU</td><td>Carrissa Prri Supriyanto</td><td>Karangawen</td><td>Demak</td></tr>
+                            <tr><td>12</td><td>REG-260616-TR7H</td><td>Deswia Sheyla Fatikhah</td><td>Godong</td><td>Grobogan</td></tr>
+                            <tr><td>13</td><td>REG-260616-KJ39</td><td>Elvia Setya Putri</td><td>Toroh</td><td>Grobogan</td></tr>
+                            <tr><td>14</td><td>REG-260616-628S</td><td>Elvina Naimatul Khoiriyah</td><td>Toroh</td><td>Grobogan</td></tr>
+                            <tr><td>15</td><td>REG-260616-ERQU</td><td>Hamida Zakiyatus Shofiya</td><td>Demak</td><td>Demak</td></tr>
+                            <tr><td>16</td><td>REG-260616-E4MJ</td><td>Livia Nuraini</td><td>Toroh</td><td>Grobogan</td></tr>
+                            <tr><td>17</td><td>REG-260616-ZLYH</td><td>Maelany Prytha Amanda</td><td>Tegowanu</td><td>Grobogan</td></tr>
+                            <tr><td>18</td><td>REG-260616-GJXQ</td><td>Meidina Salwa Nazikhah</td><td>Penawangan</td><td>Grobogan</td></tr>
+                            <tr><td>19</td><td>REG-260616-1F5E</td><td>Nadzifah Millatina</td><td>Demak</td><td>Demak</td></tr>
+                            <tr><td>20</td><td>REG-260616-ONNN</td><td>Safhira Aulia Hadini</td><td>Gubug</td><td>Grobogan</td></tr>
+                            <tr><td>21</td><td>REG-260616-S821</td><td>Alisa Bunga Amelia</td><td>Toroh</td><td>Grobogan</td></tr>
+                            <tr><td>22</td><td>REG-260616-9ISW</td><td>Dina Wulan Fitriana</td><td>Teluk Gelam</td><td>Ogan Komering Ilir</td></tr>
+                            <tr><td>23</td><td>REG-260616-Y1IR</td><td>Faridatul Lubbal Azkiya</td><td>Kebonagung</td><td>Demak</td></tr>
+                            <tr><td>24</td><td>REG-260616-Q7ST</td><td>Firri Salsabila Maghfiroh</td><td>Toroh</td><td>Grobogan</td></tr>
+                            <tr><td>25</td><td>REG-260616-M3TM</td><td>Fitri Yuni Yanti</td><td>Godong</td><td>Grobogan</td></tr>
+                            <tr><td>26</td><td>REG-260616-YRC5</td><td>Fitria Anggun Sari</td><td>Penawangan</td><td>Grobogan</td></tr>
+                            <tr><td>27</td><td>REG-260616-QO8R</td><td>Ikhtiarika Karunia Luna Meida</td><td>Karangawen</td><td>Demak</td></tr>
+                            <tr><td>28</td><td>REG-260616-ECBT</td><td>Intan Robiatul Adawiyah</td><td>Godong</td><td>Grobogan</td></tr>
+                            <tr><td>29</td><td>REG-260616-CG3Z</td><td>Khoirotun Nisa</td><td>Toroh</td><td>Grobogan</td></tr>
+                            <tr><td>30</td><td>REG-260616-WFTE</td><td>Luna Sintia Vera</td><td>Karangawen</td><td>Demak</td></tr>
+                            <tr><td>31</td><td>REG-260616-4GBQ</td><td>Nabila Putri Riani</td><td>Gubug</td><td>Grobogan</td></tr>
+                            <tr><td>32</td><td>REG-260616-1W4P</td><td>Naisyifa Maretasya Vislam</td><td>Tlogomulyo</td><td>Semarang</td></tr>
+                            <tr><td>33</td><td>REG-260616-7UH1</td><td>Najwa Ayu Aqla Akmalia Phasa</td><td>Dempet</td><td>Demak</td></tr>
+                            <tr><td>34</td><td>REG-260616-766K</td><td>Nurma Alivia Humaira</td><td>Merauke</td><td>Papua Selatan</td></tr>
+                            <tr><td>35</td><td>REG-260616-JE1C</td><td>Rohmatul Faizah</td><td>Godong</td><td>Grobogan</td></tr>
+                            <tr><td>36</td><td>REG-260616-YA9F</td><td>Syifa Azcha Shalsabila</td><td>Toroh</td><td>Grobogan</td></tr>
+                            <tr><td>37</td><td>REG-260616-4BTL</td><td>Tachta Alfina Wulandari</td><td>Gubug</td><td>Grobogan</td></tr>
+                            <tr><td>38</td><td>REG-260616-XCBM</td><td>Vina Aprilia Putri</td><td>Grobogan</td><td>Grobogan</td></tr>
+                            <tr><td>39</td><td>REG-260616-JCDF</td><td>Wilda Rifki Silvia</td><td>Dempet</td><td>Demak</td></tr>
+                            <tr><td>40</td><td>REG-260616-STAC</td><td>Yuyun Puji Astuti</td><td>Toroh</td><td>Grobogan</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- TAB 3 : Rundown Acara -->
+            <div id="tab3" class="tab-content">
+                <div style="padding: 0 0.6rem 0.6rem 0.6rem;">
+                    <div style="font-weight: 600; font-size: 1.05rem; color: #1e3342;">Pendidikan Al Quran Metode Qiroati · Cabang Demak</div>
+                    <div style="color: #3d5d73;">TAHUN 1448 / 2026</div>
+                </div>
+                <div class="rundown-wrapper">
+                    <table class="rundown-table">
+                        <thead>
+                            <tr>
+                                <th>HARI, TGL</th>
+                                <th>WAKTU</th>
+                                <th>KEGIATAN</th>
+                                <th>PENGISI</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- SELASA -->
+                            <tr>
+                                <td rowspan="13">Selasa<br><small>23 Juni 2026</small></td>
+                                <td>07.00</td>
+                                <td>Daftar Hadir</td>
+                                <td>Panitia</td>
+                            </tr>
+                            <tr>
+                                <td>07.00 – 07.30</td>
+                                <td>Penyampaian Jadwal Acara Metodologi</td>
+                                <td>Panitia</td>
+                            </tr>
+                            <tr>
+                                <td>08.00 – 09.00</td>
+                                <td>MMQ</td>
+                                <td>Pj. Tashih Qiroati Demak</td>
+                            </tr>
+                            <tr>
+                                <td>09.00 – 09.30</td>
+                                <td colspan="2">Istirahat</td>
+                            </tr>
+                            <tr>
+                                <td>09.30 – 11.00</td>
+                                <td>Metodologi Pra TK</td>
+                                <td>Tim Metodologi Qiroati Demak</td>
+                            </tr>
+                            <tr>
+                                <td>11.00 – 13.00</td>
+                                <td colspan="2">Ishoma</td>
+                            </tr>
+                            <tr>
+                                <td>13.00 – 15.00</td>
+                                <td>Lanjutan Metodologi</td>
+                                <td>Tim Metodologi Qiroati Demak</td>
+                            </tr>
+                            <tr>
+                                <td>15.00 – 16.00</td>
+                                <td colspan="2">Istirahat</td>
+                            </tr>
+                            <tr>
+                                <td>16.00 – 17.00</td>
+                                <td>Lanjutan Metodologi</td>
+                                <td>Tim Metodologi Qiroati Demak</td>
+                            </tr>
+                            <tr>
+                                <td>17.00 – 19.30</td>
+                                <td colspan="2">Ishoma</td>
+                            </tr>
+                            <tr>
+                                <td>19.30 – 20.30</td>
+                                <td>Penyampaian Sejarah Qiroati Dan Visi Misi</td>
+                                <td>Pj. Amanah Buku Qiroati Demak</td>
+                            </tr>
+                            <tr>
+                                <td>20.30 – 22.00</td>
+                                <td>Lanjutan Metodologi</td>
+                                <td>Tim Metodologi Qiroati Demak</td>
+                            </tr>
+                            <tr>
+                                <td>22.00 – 05.00</td>
+                                <td colspan="2">Istirahat</td>
+                            </tr>
+
+                            <!-- RABU -->
+                            <tr>
+                                <td rowspan="14">Rabu<br><small>24 Juni 2026</small></td>
+                                <td>05.00 – 06.00</td>
+                                <td>MMQ</td>
+                                <td>Pj. Tashih Qiroati Demak</td>
+                            </tr>
+                            <tr>
+                                <td>06.30 – 07.30</td>
+                                <td colspan="2">Sarapan Pagi</td>
+                            </tr>
+                            <tr>
+                                <td>07.30 – 08.30</td>
+                                <td>Sambutan Pembina Korcab Demak</td>
+                                <td>Bapak KH. Muhammad Mahfudz Harir, AH</td>
+                            </tr>
+                            <tr>
+                                <td>08.30 – 09.30</td>
+                                <td>Lanjutan Metodologi</td>
+                                <td>Tim Metodologi Qiroati Demak</td>
+                            </tr>
+                            <tr>
+                                <td>09.30 – 11.30</td>
+                                <td>Lanjutan Metodologi</td>
+                                <td>Tim Metodologi Qiroati Demak</td>
+                            </tr>
+                            <tr>
+                                <td>11.30 – 13.00</td>
+                                <td colspan="2">ISHOMA</td>
+                            </tr>
+                            <tr>
+                                <td>13.00 – 15.00</td>
+                                <td>Lanjutan Metodologi</td>
+                                <td>Tim Metodologi Qiroati Demak</td>
+                            </tr>
+                            <tr>
+                                <td>15.00 – 16.00</td>
+                                <td colspan="2">Istirahat Sholat</td>
+                            </tr>
+                            <tr>
+                                <td>16.00 – 17.00</td>
+                                <td>Lanjutan Metodologi</td>
+                                <td>Tim Metodologi Qiroati Demak</td>
+                            </tr>
+                            <tr>
+                                <td>17.00 – 19.30</td>
+                                <td colspan="2">ISHOMA</td>
+                            </tr>
+                            <tr>
+                                <td>19.30 – 20.30</td>
+                                <td>Makhorijul Huruf</td>
+                                <td>Bapak KH. Abdullah Salam, AH</td>
+                            </tr>
+                            <tr>
+                                <td>21.00 – 21.30</td>
+                                <td colspan="2">Istirahat</td>
+                            </tr>
+                            <tr>
+                                <td>21.30 – 22.30</td>
+                                <td>Lanjutan Metodologi</td>
+                                <td>Tim Metodologi Qiroati Demak</td>
+                            </tr>
+                            <tr>
+                                <td>22.30 – 05.00</td>
+                                <td colspan="2">Istirahat</td>
+                            </tr>
+
+                            <!-- KAMIS -->
+                            <tr>
+                                <td rowspan="8">Kamis<br><small>25 Juni 2026</small></td>
+                                <td>05.00 – 07.00</td>
+                                <td>MMQ sekaligus tahtiman di Maqbaroh Pendiri Pondok BUQ</td>
+                                <td>Pj. Tashih Qiroati Demak</td>
+                            </tr>
+                            <tr>
+                                <td>07.00 – 07.30</td>
+                                <td colspan="2">Sarapan Pagi</td>
+                            </tr>
+                            <tr>
+                                <td>07.30 – 09.00</td>
+                                <td>Lanjutan Metodologi</td>
+                                <td>Tim Metodologi Qiroati Demak</td>
+                            </tr>
+                            <tr>
+                                <td>09.00 – 09.30</td>
+                                <td colspan="2">Istirahat</td>
+                            </tr>
+                            <tr>
+                                <td>09.30 – 11.30</td>
+                                <td>Lanjutan Metodologi</td>
+                                <td>Tim Metodologi Qiroati Demak</td>
+                            </tr>
+                            <tr>
+                                <td>11.30 – 13.00</td>
+                                <td colspan="2">ISHOMA</td>
+                            </tr>
+                            <tr>
+                                <td>13.00 – 14.30</td>
+                                <td>Kesekretariatan &amp; Teknis PMQ</td>
+                                <td>Pj. Sekretaris</td>
+                            </tr>
+                            <tr>
+                                <td>14.30 – 15.30</td>
+                                <td>Penutupan</td>
+                                <td>Panitia &amp; Peserta</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="keterangan-jadwal">
+                    ⚠️ Jadwal bisa berubah sesuai situasi dan keadaan, apabila ada perubahan dalam jadwal akan diinfokan oleh panitia.
+                </div>
+            </div>
+        </div>
+
+        <!-- footer -->
+        <div class="footer-note">
+            <span>📋 Data dari DAFTAR PESERTA UPLOAD.pdf &amp; RENCANA JADWAL ACARA · Qiroati Demak 1448 H</span>
+            <span class="badge-inv">3 tab</span>
+        </div>
+
+    </div>
+
+    <!-- JavaScript untuk tabulasi -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const buttons = document.querySelectorAll('.tab-btn');
+            const contents = document.querySelectorAll('.tab-content');
+
+            buttons.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    // Nonaktifkan semua tombol & konten
+                    buttons.forEach(b => b.classList.remove('active'));
+                    contents.forEach(c => c.classList.remove('active'));
+
+                    // Aktifkan tombol yang diklik
+                    this.classList.add('active');
+
+                    // Aktifkan konten sesuai target
+                    const target = this.dataset.tab;
+                    document.getElementById(target).classList.add('active');
+                });
+            });
+        });
+    </script>
+
 </body>
 </html>
